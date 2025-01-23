@@ -1,0 +1,57 @@
+* {
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 85vh;
+    padding: 20px;
+}
+
+main {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+header {
+    margin-top: 70px;
+}
+
+.list-group{
+    max-height: 200px;
+    overflow-y:scroll;
+}
+
+.search {
+    height: 300px;
+}
+
+.expand {
+    width: 500px;
+    height: 300px;
+}
+
+.submit-button {
+    width: 200px;
+    height: 50px;
+    margin-inline: 200px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+}
+
+div {
+    margin: 20px;
+}
+
+/*bottone*/
+#salvaPlaylist{
+    position: absolute;
+    right: 0;
+}

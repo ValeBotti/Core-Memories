@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <link rel="icon" href="logo_no-sfondo.ico" type="image/x-icon"/>
+    <title>PlaylistOverview: iscrizione</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="layout.css" type="text/css">
+
+    <!--bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <header>
+        <img src="logo + slogan_no-sfondo.png" alt="logo_playlistoverview">
+        <hr>
+    </header>
+
+    <main>
+        <h3>Iscriviti a PlaylistOverview</h3>
+        <form method="get" onsubmit="return checkDataIscrizione()" action="preferenzeUtente.html">
+            <div id="alertIscrizione" class="alert alert-danger" role="alert" style="display: none;">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Inserisci il tuo nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" autocomplete="on">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Indirizzo e-mail</label>
+                <input type="text" class="form-control" id="email" name="email" autocomplete="on">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Crea una password</label>
+                <input type="password" class="form-control" id="password" name="password" autocomplete="on">
+            </div>
+
+            <button type="submit" class="btn btn-dark submit-button">Iscriviti</button>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="setJSONfile.js"></script>
+
+  </body>
+</html>

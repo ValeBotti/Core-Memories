@@ -1,0 +1,89 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tablellaPlaylist {
+  max-width: 1000px;
+  width: 200%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credenzialiUtente {
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h5 {
+  margin-inline-end: 20px;
+}
+
+#cercaUtente {
+  max-width: 200px;
+}
+
+.input-group {
+  padding-top: 20px;
+}
+
+h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+tr {
+  font-size: 17px;
+}
+
+.riga {
+  font-weight: bold;
+}
+
+.modificaProfilo {
+  text-align: right;
+}
+
+a {
+  float: right;
+}
+
+.input-group>.form-control, .input-group>.form-control-plaintext {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+  max-width: 200px;
+  height: 40px;
+}
+
+#cerca {
+  font-weight: bold;
+  padding-inline: 20px;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  max-height: 40px;
+}
+
+
+.credenzialiUtente {
+  background-color: aliceblue;
+}
+
+h5 {
+  text-align: center;
+  padding: 20px;
+}
+
+#crea {
+  float: inherit;
+  width: 1000px;
+  margin-top: 50px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <link rel="icon" href="logo_no-sfondo.ico" type="image/x-icon"/>
+    <title>PlaylistOverview: profilo utente</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="profiloUtente.css">
+
+    <!--bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+
+  <body onload="showUserInfo()">
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">
+          <img src="logo_no-sfondo.png" width="30" height="30" alt="">
+          Home
+        </a>
+        Profilo personale
+        <a href="iscrizione.html" class="btn btn-outline-secondary" onclick="eraseMyProfile()" id="eliminaProfilo">elimina profilo</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!--tabella informazioni utente-->
+        <div class="credenzialiUtente">
+
+          <h3>Informazioni</h3>
+          <a href="modifica_informazioni_profiloUtente.html" id="modificaProfilo">Modifica informazioni profilo</a>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">nome</th>
+                <td id="nome"></td>
+              </tr>
+              <tr>
+                <th scope="row">email</th>
+                <td id="email"></td>
+              </tr>
+              <tr>
+                <th scope="row">password</th>
+                <td id="password"></td>
+              </tr>
+              <tr>
+                <th scope="row">artisti preferiti</th>
+                <td id="artisti_preferiti"></td>
+              </tr>
+              <tr>
+                <th scope="row">generi preferiti</th>
+                <td id="generi_preferiti"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr>
+
+        <!--tabelle playlist-->
+        <div class="tablellaPlaylist" id="tabellePlaylist">
+          <div id="divTabella">    
+            <h4>playlist salvate</h4>        
+              <table class="table" id="tabella">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col" colspan="5" id="nomePlaylist">nomePlaylist</th> 
+                  </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <th colspan="5" id="descrizionePlaylist">descrizionePlaylist</th>
+                  </tr>
+                  <tr>
+                    <th colspan="5" id="tagsPlaylist">tags</th>
+                  </tr>
+                </thead>
+                <tbody id="tracce">
+                  <tr>
+                    <td class="riga">titolo</td>
+                    <td class="riga">artista</td>
+                    <td class="riga">durata</td>
+                    <td class="riga">data di pubblicazione</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div id="successivaDiv">
+                <button class="btn btn-outline-dark" id="successiva" onclick="changeContent()" style="font-size: 20px">playlist successiva ></button>
+              </div>
+              <div id="buttonModifica">
+              </div>
+              <a href="profiloUtente.html" class="btn btn-outline-danger" onclick="erasePlaylist()">cancella playlist</a>
+              <a href="creaPlaylist.html" class="btn btn-outline-success" id="crea" style="float: centre;">crea una nuova playlist</a>
+          </div>
+
+          <div id="alertCreaPlaylist">
+          </div>
+      </div>
+
+      <hr style="margin-block: 100px;">
+        
+    </main>
+
+    <!--script-->
+    <script type="text/javascript" src="profiloUtente.js"></script>
+
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    </body>
+</html>

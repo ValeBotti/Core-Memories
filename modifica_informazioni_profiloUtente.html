@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <link rel="icon" href="logo_no-sfondo.ico" type="image/x-icon"/>
+    <title>PlaylistOverview: iscrizione</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="layout.css" type="text/css">
+
+    <!--bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <main>
+        <h3>Modifica i tuoi dati</h3>
+        <form onsubmit="salvaInputModficaInformazioni(event)">
+            <div id="alertModificaInfo" class="alert alert-danger" role="alert" style="display: none;">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Scegli un nuovo nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" autocomplete="on">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Crea una nuova password</label>
+                <input type="password" class="form-control" id="password" name="password" autocomplete="on">
+            </div>
+
+            <div id="alertPreferenzeUtente" class="alert alert-danger" role="alert" style="display: none;">
+            </div>
+      
+            <div class="search">
+              <label for="genre_seeds-input">Scegli i tuoi generi musicali preferiti!</label>
+              <input type="text" name="generi preferiti" class="form-control form-control-lg" id="genre_seeds-input" placeholder="Inserisci il genere musicale qui" oninput="handleGenreInput()">
+              <ul class="list-group" id="genre_seeds-list"></ul>
+            </div>
+        
+            <div class="search">
+              <label for="artist-input">Scegli i tuoi artisti preferiti!</label>
+              <input type="text" name="artisti preferiti" class="form-control form-control-lg" id="artist-input" placeholder="Inserisci l'artista qui" oninput="handleArtistInput()">
+              <ul class="list-group" id="artist-list"></ul>
+            </div>
+      
+              <hr>
+              <div class="expand">
+                <hr><p>Generi musicali</p>
+                <ul id="genre_seeds-chosen" ></ul>
+                <hr><p>Artisti</p>
+                <ul id="artist-chosen" ></ul>
+              </div>
+      
+              <hr>
+
+            <button type="submit" class="btn btn-dark submit-button">Salva le impostazioni</button>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
